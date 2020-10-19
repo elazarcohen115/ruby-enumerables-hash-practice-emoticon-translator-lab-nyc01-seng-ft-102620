@@ -3,7 +3,9 @@ require 'pry'
 def load_library (data)
   start = YAML.load_file('lib/emoticons.yml')
   start.each_with_object({}) do |(k,v), new_hash|
-    new_hash[k] = {english: v[0], japanese: v[1]}
+    if !new_hash[k]
+      new_hash[k] = {english: v[0], japanese: v[1]}
+    end
   end
   #binding.pry
   new_hash
