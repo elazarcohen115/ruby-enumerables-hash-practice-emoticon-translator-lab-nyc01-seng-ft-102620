@@ -5,9 +5,6 @@ def load_library (data)
   #thing.each do |k,v|
    #k[:english] = v
    binding.pry
- end
- end
-
 end
 
 def get_japanese_emoticon
