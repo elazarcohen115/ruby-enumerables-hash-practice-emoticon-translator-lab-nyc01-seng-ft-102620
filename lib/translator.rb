@@ -7,6 +7,19 @@ def load_library (data)
   end
 end
 
+def get_japanese_emoticon (file, emoji)
+  #binding.pry
+  data = load_library(file)
+  data.each do |k, v|
+    v.each do |ik, iv|
+      if iv == emoji
+        hats = data[k][ik][:english]
+        binding.pry
+      end
+    end
+  end
+end
+
 
 def get_english_meaning (file, emoji)
   data = load_library(file)
@@ -20,15 +33,3 @@ def get_english_meaning (file, emoji)
   return "Sorry, that emoticon was not found"
 end
 
-def get_japanese_emoticon (file, emoji)
-  binding.pry
-  data = load_library(file)
-  data.each do |k, v|
-    v.each do |ik, iv|
-      if iv == emoji
-        hats = data[k][ik][:english]
-        binding.pry
-      end
-    end
-  end
-end
