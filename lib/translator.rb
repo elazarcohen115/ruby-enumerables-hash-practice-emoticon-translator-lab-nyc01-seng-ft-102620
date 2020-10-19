@@ -10,7 +10,7 @@ end
 
 def get_english_meaning (file, emoji)
   data = load_library(file)
-  english = data.key(data.key(emoji))
+  english = data.key(emoji)
   binding.pry
   return english
 end
