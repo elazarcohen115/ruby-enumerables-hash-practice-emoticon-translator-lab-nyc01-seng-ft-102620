@@ -9,16 +9,16 @@ end
 
 
 def get_english_meaning (file, emoji)
-  hats = 9
+  hats = nil
   data = load_library(file)
   data.each do |k, v|
     v.each do |ik, iv|
       if iv == emoji
-        hats = 10
+        hats = k
       end
     end
   end
-  binding.pry
+  hats
 end
 
 
