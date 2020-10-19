@@ -5,6 +5,7 @@ def load_library (data)
   start.each_with_object({}) do |(k,v), new_hash|
     if !new_hash[k]
       new_hash[k] = {english: v[0], japanese: v[1]}
+      binding.pry
     end
   end
   binding.pry
