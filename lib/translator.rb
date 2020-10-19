@@ -10,7 +10,7 @@ end
 
 def get_english_meaning (file, emoji)
   data = load_library(file)
-  data.find |k,v|
+  data.find |k, v|
     v == emoji
   end
   v
