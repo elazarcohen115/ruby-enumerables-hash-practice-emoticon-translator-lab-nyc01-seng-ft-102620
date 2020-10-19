@@ -26,7 +26,7 @@ def get_japanese_emoticon (file, emoji)
     v.each do |ik, iv|
       if iv == emoji
         hats = data[k][ik][:english]
-        return hats
+        binding.pry
       end
     end
   end
