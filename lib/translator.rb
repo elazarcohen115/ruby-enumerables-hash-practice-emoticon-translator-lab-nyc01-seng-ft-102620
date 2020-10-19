@@ -13,7 +13,7 @@ def get_japanese_emoticon (file, emoji)
   data.each do |k, v|
     v.each do |ik, iv|
       if iv == emoji
-        return data[k][:english]
+        return data[k][:japanese]
       end
     end
   end
