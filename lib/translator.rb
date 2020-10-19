@@ -13,11 +13,11 @@ def get_japanese_emoticon (file, emoji)
   data.each do |k, v|
     v.each do |ik, iv|
       if iv == emoji
-        hats = data[k][ik][:english]
-        binding.pry
+        return data[k][ik][:english]
       end
     end
   end
+  return "Sorry, that emoticon was not found"
 end
 
 
