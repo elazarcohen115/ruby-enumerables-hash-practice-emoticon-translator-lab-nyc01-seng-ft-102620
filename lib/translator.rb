@@ -2,7 +2,7 @@ require 'yaml'# require modules here
 require 'pry'
 def load_library (data)
   hash = {}
-  thing = YAML.load_file('emoticons')
+  thing = YAML.load_file('lib/emoticons.yml')
   binding.pry
  # code goes here
 end
@@ -14,5 +14,3 @@ end
 def get_english_meaning
   # code goes here
 end
-
-load_library (emoticons.yml)
