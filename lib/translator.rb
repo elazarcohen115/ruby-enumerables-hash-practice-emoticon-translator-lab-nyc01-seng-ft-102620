@@ -1,6 +1,6 @@
+# require modules here
 require 'yaml'
 
-# Write a method that loads the emoticons.yml file.
 def load_library(path)
   #set a hash with get_meaning, get_emoticon as keys, empty hash for value
   emoticons = {"get_meaning" => {}, "get_emoticon" => {}}
@@ -14,10 +14,6 @@ def load_library(path)
   emoticons
 end
 
-# get japanese meaning:
-# accepts two arguments, the YAML file path and the emoticon
-# calls on #load_library and gives it the argument of the file path
-# returns the Japanese equivalent of an English emoticons
 
 def get_japanese_emoticon(path, emoticon)
   emoticons = load_library(path) #call load_library
@@ -28,11 +24,6 @@ def get_japanese_emoticon(path, emoticon)
     "Sorry, that emoticon was not found"
   end
 end
-
-#result:
-get_japanese_emoticon(path, "=D")).to eq("(￣ー￣)
-
-# get_english_meaning: returns the English meaning of the Japanese emoticon
 
 def get_english_meaning(path, emoticon)
   emoticons = load_library(path)
