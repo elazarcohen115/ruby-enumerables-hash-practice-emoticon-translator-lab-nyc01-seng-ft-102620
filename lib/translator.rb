@@ -1,6 +1,7 @@
 require 'yaml'# require modules here
 
 def load_library (data)
+  hash = {}
   hash = YAML.load_file('data.yml')
   hash # code goes here
 end
