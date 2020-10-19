@@ -7,7 +7,7 @@ def load_library (data)
       new_hash[k] = {english: v[0], japanese: v[1]}
     end
   end
-  #binding.pry
+  binding.pry
   new_hash
 end
 
