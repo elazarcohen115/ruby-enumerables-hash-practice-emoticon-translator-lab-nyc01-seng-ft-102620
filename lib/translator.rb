@@ -9,11 +9,15 @@ end
 
 
 def get_english_meaning (file, emoji)
+  hats = 9
   data = load_library(file)
-  english = data.key({
-     :english => ":)",
-     :japanese => "(＾ｖ＾)"
-  })
+  data.each do |k, v|
+    v.each do |ik, iv|
+      if iv == emoji
+        hats = 10
+      end
+    end
+  end
   binding.pry
 end
 
