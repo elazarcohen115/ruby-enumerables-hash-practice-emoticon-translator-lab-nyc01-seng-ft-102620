@@ -9,7 +9,6 @@ end
 
 
 def get_english_meaning (file, emoji)
-  hats = nil
   data = load_library(file)
   data.each do |k, v|
     v.each do |ik, iv|
@@ -18,6 +17,7 @@ def get_english_meaning (file, emoji)
       end
     end
   end
+  puts "Sorry, that emoticon was not found"
 end
 
 def get_japanese_emoticon (file, emoji)
