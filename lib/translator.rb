@@ -14,15 +14,8 @@ def get_english_meaning (file, emoji)
   data.each do |k, v|
     v.each do |ik, iv|
       if iv == emoji
-        hats = k
+        return k
       end
     end
   end
-  hats
-end
-
-
-def get_japanese_emoticon
-
-  # code goes here
 end
