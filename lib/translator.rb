@@ -6,11 +6,11 @@ def load_library (data)
     #binding.pry
     if !new_hash[k]
       new_hash[k] = {english: v[0], japanese: v[1]}
-      binding.pry
+      #binding.pry
     end
   end
-  binding.pry
   new_hash
+  binding.pry
 end
 
 def get_japanese_emoticon
