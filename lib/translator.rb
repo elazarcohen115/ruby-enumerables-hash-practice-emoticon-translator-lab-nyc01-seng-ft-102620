@@ -1,7 +1,9 @@
 require 'yaml'# require modules here
-
+require 'pry'
 def load_library (data)
   hash = {}
+  thing = YAML.load_file('emoticons')
+  binding.pry
  # code goes here
 end
 
