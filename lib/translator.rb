@@ -3,19 +3,21 @@ require 'pry'
 def load_library (data)
   start = YAML.load_file('lib/emoticons.yml')
   final_results = start.each_with_object({}) do |(k,v), new_hash|
-    #binding.pry
-    #if !new_hash[k]
       new_hash[k] = {english: v[0], japanese: v[1]}
-      #binding.pry
-    #end
   end
-  #binding.pry
 end
 
-def get_japanese_emoticon
+
+def get_english_meaning (file, emoji)
+  data = load_library(file)
+  binding.pry
+  
+  
   # code goes here
 end
 
-def get_english_meaning
+
+def get_japanese_emoticon
+  
   # code goes here
 end
