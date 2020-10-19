@@ -21,11 +21,11 @@ def get_japanese_emoticon (file, emoji)
 end
 
 
-def get_english_meaning (file, emoji)
-  data = load_library(file)
+def get_english_meaning (files, emojis)
+  data = load_library(files)
   data.each do |k, v|
     v.each do |ik, iv|
-      if iv == emoji
+      if iv == emojis
         return k
       end
     end
