@@ -9,7 +9,6 @@ def load_library (data)
       #binding.pry
     end
   end
-  new_hash
   binding.pry
 end
 
