@@ -4,10 +4,10 @@ def load_library (data)
   start = YAML.load_file('lib/emoticons.yml')
   final_results = start.each_with_object({}) do |(k,v), new_hash|
     #binding.pry
-    if !new_hash[k]
+    #if !new_hash[k]
       new_hash[k] = {english: v[0], japanese: v[1]}
       #binding.pry
-    end
+    #end
   end
   #binding.pry
 end
