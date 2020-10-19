@@ -15,7 +15,7 @@ def get_english_meaning (file, emoji)
       iv == emoji
     end
   end
-  
+
   binding.pry
   return english
 end
