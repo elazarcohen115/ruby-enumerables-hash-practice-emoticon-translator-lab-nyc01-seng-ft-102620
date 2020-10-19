@@ -2,8 +2,11 @@ require 'yaml'# require modules here
 require 'pry'
 def load_library (data)
   thing = YAML.load_file('lib/emoticons.yml')
-  binding.pry
- # code goes here
+  thing.each do |k,v|
+   k[:english] = v
+   binding.pry
+ end
+
 end
 
 def get_japanese_emoticon
