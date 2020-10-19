@@ -11,13 +11,13 @@ end
 def get_english_meaning (file, emoji)
   data = load_library(file)
   binding.pry
-  
-  
+
+
   # code goes here
 end
 
 
 def get_japanese_emoticon
-  
+
   # code goes here
 end
