@@ -16,6 +16,7 @@ def get_english_meaning (file, emoji)
       if iv == emoji
         return k
       end
+      return "Sorry, that emoticon was not found"
     end
   end
 end
