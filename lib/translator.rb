@@ -13,7 +13,7 @@ def get_japanese_emoticon (file, emoji)
   data.each do |k, v|
     v.each do |ik, iv|
       if iv == emoji
-        return data[k][ik][:english]
+        return data[k][:english]
       end
     end
   end
@@ -21,11 +21,11 @@ def get_japanese_emoticon (file, emoji)
 end
 
 
-def get_english_meaning (files, emojis)
-  data = load_library(files)
+def get_english_meaning (file, emoji)
+  data = load_library(file)
   data.each do |k, v|
     v.each do |ik, iv|
-      if iv == emojis
+      if iv == emoji
         return k
       end
     end
