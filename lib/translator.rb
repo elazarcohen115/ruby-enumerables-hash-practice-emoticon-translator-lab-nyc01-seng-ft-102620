@@ -10,7 +10,12 @@ end
 
 def get_english_meaning (file, emoji)
   data = load_library(file)
-  english = data.key(emoji)
+  data.each do |k, v|
+    v.find do |iv|
+      iv == emoji
+    end
+  end
+  
   binding.pry
   return english
 end
